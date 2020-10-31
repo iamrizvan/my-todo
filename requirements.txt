@@ -56,7 +56,6 @@ Werkzeug==1.0.1
 whitenoise==5.1.0
 wrapt==1.12.1
 zipp==3.1.0
-importlib==1.0.4
 portalocker==2.0.0
 pywin32==228
 sqlparse==0.3.1
