@@ -29,7 +29,10 @@ SECRET_KEY = 'bnzk!kcm=8-@26l&3y&s+vnt^sam=*#h2m_&^8wgb_)dy9@(y&'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = [
+    'thawing-island-98036.herokuapp.com',
+    '127.0.0.1'
+]
 
 
 # Application definition
