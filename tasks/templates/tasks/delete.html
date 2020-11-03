@@ -1,8 +1,30 @@
-<p>Are you sure that you want to delete "{{task}}"?</p>
-<a href="{% url 'list' %}">Cancel</a>
+<link
+  rel="stylesheet"
+  href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+  integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+  crossorigin="anonymous"
+/>
+<style>
+  .main-body{
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 3px;
+    box-shadow: 6px 2px 30px 0px rgba(0, 0, 0, 0.75);
+  }
+  
+</style>
 
-<form action="" method="POST">
-    {% csrf_token %}
-    <input type="submit" value="Confirm" name="Confirm">
-</form>
+<div class="main-body">
+  <h3>DELETE TASK</h3>
+  <p>Are you sure that you want to delete "{{task}}"?</p>
+  <a href="{% url 'list' %}">Cancel</a>
+  
+  <form action="" method="POST">
+      {% csrf_token %}
+      <input type="submit" value="Confirm" name="Confirm">
+  </form>
+</div>
+
+
 
