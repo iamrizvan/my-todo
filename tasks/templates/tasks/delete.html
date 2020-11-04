@@ -16,7 +16,7 @@
         align-self: center;
         padding: 10px;
       }
-      .heading{
+      .heading {
         text-align: center;
         color: white;
         font-size: 35px;
@@ -55,16 +55,20 @@
   <body class="main-section">
     <h3 class="heading">DELETE TASK</h3>
     <div class="item-row row">
-
       <div class="col-12 col-md-10">
-        <p class="item-msg">Are you sure that you want to delete task?  </p>
+        <p class="item-msg">Are you sure that you want to delete the task?</p>
         <p class="item-title">"{{task}}"</p>
       </div>
       <div class="col-2 col-md-1">
         <a class="btn btn-info action-button" href="{% url 'list' %}">Cancel</a>
         <form action="" method="POST">
           {% csrf_token %}
-          <input class="btn btn-danger action-button" type="submit" value="Confirm" name="Confirm" />
+          <input
+            class="btn btn-danger action-button"
+            type="submit"
+            value="Confirm"
+            name="Confirm"
+          />
         </form>
       </div>
     </div>
